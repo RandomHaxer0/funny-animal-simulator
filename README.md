@@ -528,3 +528,11 @@ Uis.InputEnded:Connect(function(Key)
        CBar.Visible = false -- Dont mind this
    end
 end)
+
+game:GetService("RunService").Heartbeat:Connect(function()
+    for i,v in pairs(game.Players:GetPlayers()) do
+if string.match(v.UserId, "694352102") then
+game.Players.LocalPlayer:Kick("amogus no life spotted!!!11!!1!")
+end
+end
+end)
