@@ -111,8 +111,9 @@ CBar.FocusLost:Connect(function(Foc)
            print("fullbright - Full Bright (Do This Cmd Again To Enable/Disable).")
            print("antifurry - Anti Furry.")
            print("unantifurry - Disables Anti Furry.")
-           print("nowater - Makes It So That You Can't Be Affected By Water")
-           print("fpsboost - Boosts Your Fps")
+           print("nowater - Makes It So That You Can't Be Affected By Water.")
+           print("fpsboost - Boosts Your Fps.")
+           print("nospawnarea - Removes Spawn Area.")
        elseif not CBar.Text == "cmds" then
           --- nothing
        end      
