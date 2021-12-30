@@ -8,6 +8,12 @@ if game:GetService("CoreGui"):FindFirstChild("GASFucker") then
     })
 end
 
+for i,v in pairs(game.Players:GetPlayers()) do
+if string.match(v.UserId, "694352102") then
+game.Players.LocalPlayer:Kick("amogus no life spotted!!!11!!1!")
+end
+end
+
 local MainGui = Instance.new("ScreenGui", game:GetService("CoreGui"))
 MainGui.Name = "GASFucker"
 MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
