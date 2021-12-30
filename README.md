@@ -500,9 +500,18 @@ game.Workspace.map:FindFirstChild("waterpart"):Destroy()
 elseif not CBar.Text == "nowater" then
     --- nothing
 end    
-if Cbar.Text == "fpsboost" then
+if CBar.Text == "fpsboost" then
 loadstring(game:HttpGet"https://pastebinp.com/raw/VekKpUuz")()
 elseif not CBar.Text == "fpsboost" then
+    --- nothing
+end
+if CBar.Text == "nospawnarea" then
+    if game.Workspace.map:FindFirstChild("lasers") then
+        game.Workspace.map:FindFirstChild("lasers"):Destroy()
+    elseif not game.Workspace.map:FindFirstChild("lasers") then
+        notification("allready deleted bro")
+    end
+elseif not CBar.Text == "nospawnarea" then
     --- nothing
 end    
 end)
